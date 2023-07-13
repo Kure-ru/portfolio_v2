@@ -1,0 +1,102 @@
+:root {
+  --black: #111c28;
+  --dark-gray: #4d5560;
+  --light-gray: #babfbe;
+}
+
+/* STYLE DE BASE */
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--black);
+}
+
+a {
+  color: var(--dark-gray);
+}
+
+button {
+  background: var(--dark-gray);
+}
+
+header img {
+  width: 40px;
+}
+
+.hero__txt button, .about__text button {
+  border: none;
+  color: white;
+}
+
+.hero__txt button:hover,
+.about__text button:hover {
+  color: var(--dark-gray);
+  border: 2px solid var(--dark-gray);
+  background: white;
+}
+
+/* LAYOUT */
+body {
+  padding: 5rem;
+}
+
+/* HERO  */
+.hero__container {
+}
+
+.hero__img {
+  max-width: 100%;
+}
+
+.hero__txt {
+  background: white;
+  padding: 1rem;
+  max-width: 560px;
+  position: absolute;
+  bottom: 6rem;
+  left: 3rem;
+}
+
+.hero__txt button {
+  margin-left: 1rem;
+}
+
+
+
+
+/* ABOUT */
+
+.about{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about img{
+  min-height: 350px;
+  max-width: 300px;
+  object-fit: scale-down !important;
+}
+
+.about__text{
+  padding: 0 4rem;
+  flex-basis: 40%;
+  border-top: 2px solid var(--light-gray);
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.about__text h2 {
+  font-size: 2.2rem;
+}
