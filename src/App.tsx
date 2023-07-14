@@ -1,8 +1,7 @@
-
 import './App.css'
 import Hero from './components/Hero'
 import About from './components/About'
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import Portfolio from './views/Portfolio';
 import Contact from './views/Contact';
 import Skills from './views/Skills';
