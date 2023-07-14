@@ -4,7 +4,7 @@ const Hero = () => {
     <img className="hero__img" alt='ordinateur et bureau' src='/hero.jpg'/>
     <div className="hero__txt">
       <h1>
-        Salut, moi c'est Claire Dochez.
+        Bonjour, moi c'est Claire!
         <br/>
         Bienvenue sur mon portfolio
       </h1>

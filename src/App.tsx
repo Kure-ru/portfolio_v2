@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Portfolio from './views/Portfolio';
+import Contact from './views/Contact';
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="portfolio" element={<Portfolio />} /> 
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
 
@@ -25,28 +27,34 @@ function Layout() {
   return (
     <div>
       <header>
+        <div>
+          <Link to={'/'}><img alt="logo" src="/logo.png" /></Link>
+        </div>
+
         <ul>
-          <li><img alt="logo" src="/logo.png" /></li>
           <li><Link to={'/'}>Accueil</Link></li>
           <li><Link to={'/portfolio'}>Portfolio</Link></li>
           <li><Link to={'/contact'}>Contact</Link></li>
         </ul>
       </header>
-
-      {/* An <Outlet> renders whatever child route is currently active,
-          so you can think about this <Outlet> as a placeholder for
-          the child routes we defined above. */}
       <Outlet />
+      <footer>
+        <ul>
+          <li><Link to={'/'}>Accueil</Link></li>
+          <li><Link to={'/portfolio'}>Portfolio</Link></li>
+          <li><Link to={'/contact'}>Contact</Link></li>
+        </ul>
+      </footer>
     </div>
   );
 }
 
 function Home() {
   return (
-    <div>
+    <main>
       <Hero />
       <About />
-    </div>
+    </main>
   );
 }
 

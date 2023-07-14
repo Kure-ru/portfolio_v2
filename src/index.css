@@ -12,6 +12,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
+
+
 a {
   font-weight: 500;
   color: #4d5560;
@@ -46,7 +48,7 @@ button {
   text-transform: uppercase;
 }
 
-/* button:focus,
+button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-} */
+}
