@@ -1,7 +1,7 @@
 const Skills = () => {
     return (
         <main>
-            <h1>Compétences</h1>
+            <h1 className="skills__title">Compétences</h1>
             <section className="skills__container">
                 <div className="skill__container">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />

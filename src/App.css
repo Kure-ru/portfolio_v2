@@ -165,7 +165,7 @@ footer a:hover{
 }
 
 .portfolio__top{
-  padding: 1rem;
+  padding: 1rem 3rem;
   border-bottom: 1px solid var(--light-gray);
 } 
 
@@ -235,6 +235,7 @@ footer a:hover{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-left: 3rem;
   max-height: 800px;
   max-width: 90%;
 }
@@ -244,8 +245,11 @@ footer a:hover{
   padding: 2rem;
 }
 
+.skills__title{
+  padding-left: 4rem;
+}
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 .hero__container{
   display: flex;
   flex-direction: column;
@@ -318,6 +322,10 @@ main {
 
 .skills__container{
   flex-direction: column;
+}
+
+.footer__links{
+  display: none;
 }
 }
 

@@ -30,7 +30,7 @@ const Header = () => {
             <div>
                 <Link to={'/'}><img alt="logo" src="/logo.png" /></Link>
             </div>
-            {(toggleMenu || screenWidth > 500) && (
+            {(toggleMenu || screenWidth > 600) && (
             <ul className="list">
                 <li className="items"><Link onClick={toggleNav} to={'/'}>Accueil</Link></li>
                 <li className="items"><Link onClick={toggleNav} to={'/portfolio'}>Portfolio</Link></li>

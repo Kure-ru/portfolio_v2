@@ -7,6 +7,7 @@ import Portfolio from './views/Portfolio';
 import Contact from './views/Contact';
 import Skills from './views/Skills';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -31,14 +32,7 @@ function Layout() {
     <>
      <Header/>
       <Outlet />
-      <footer>
-        <ul>
-          <li><Link to={'/'}>Accueil</Link></li>
-          <li><Link to={'/portfolio'}>Portfolio</Link></li>
-          <li><Link to={'/skills'}>Compétences</Link></li>
-          <li><Link to={'/contact'}>Contact</Link></li>
-        </ul>
-      </footer>
+      <Footer/>
     </>
   );
 }
