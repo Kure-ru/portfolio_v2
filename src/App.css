@@ -6,12 +6,10 @@
 
 /* STYLE DE BASE */
 
-#root{
-  width: 100vw;
-}
 
 main {
-  padding: 3rem;
+  width: 100vw;
+  padding: 3rem 0;
 }
 ul {
   display: flex;
@@ -125,10 +123,18 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
+  height: 50px;
 }
 
 header a {
   font-weight: 700;
+}
+
+.btn {
+  display: none;
+  color: #000;
+  font-size: 40px;
+  cursor: pointer;
 }
 
 
@@ -206,6 +212,7 @@ footer a:hover{
 
 /* CONTACT */
 
+
 .contact__title{
   margin: 0;
 }
@@ -223,7 +230,22 @@ footer a:hover{
 }
 
 
-@media (max-width: 700px) {
+/* SKILLS */
+.skills__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 800px;
+  max-width: 90%;
+}
+
+.skill__container{
+  width: 100px;
+  padding: 2rem;
+}
+
+
+@media (max-width: 500px) {
 .hero__container{
   display: flex;
   flex-direction: column;
@@ -246,4 +268,58 @@ footer a:hover{
   flex-direction: column-reverse;
 }
 
+.btn {
+  display: block;
 }
+
+.list {
+  flex-direction: column;
+  height: auto;
+  gap: .5rem;
+  padding: 1rem;
+  background: white;
+  z-index: 999;
+  position: absolute;
+  top: 90px;
+  right: -70px;
+}
+
+.items:nth-child(1){
+  border-top: 1px solid rgba(255, 255, 255, 0.555);
+  margin-top: 50px;
+}
+
+.items {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.555);
+  text-align: right;
+  margin-right: 0;
+  padding: .8rem;
+
+}
+
+.skill__container{
+  width: 80px;
+  padding: 1rem;
+}
+
+.portfolio__img{
+  max-width: 90%;
+}
+
+main {
+  padding: 3rem 50px;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__container{
+  flex-direction: column;
+}
+}
+
+
+

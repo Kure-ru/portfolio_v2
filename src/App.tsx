@@ -5,6 +5,8 @@ import About from './components/About'
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Portfolio from './views/Portfolio';
 import Contact from './views/Contact';
+import Skills from './views/Skills';
+import Header from './components/Header';
 
 function App() {
 
@@ -16,6 +18,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="skills" element={<Skills />} />
         </Route>
       </Routes>
 
@@ -25,27 +28,18 @@ function App() {
 
 function Layout() {
   return (
-    <div>
-      <header>
-        <div>
-          <Link to={'/'}><img alt="logo" src="/logo.png" /></Link>
-        </div>
-
-        <ul>
-          <li><Link to={'/'}>Accueil</Link></li>
-          <li><Link to={'/portfolio'}>Portfolio</Link></li>
-          <li><Link to={'/contact'}>Contact</Link></li>
-        </ul>
-      </header>
+    <>
+     <Header/>
       <Outlet />
       <footer>
         <ul>
           <li><Link to={'/'}>Accueil</Link></li>
           <li><Link to={'/portfolio'}>Portfolio</Link></li>
+          <li><Link to={'/skills'}>Compétences</Link></li>
           <li><Link to={'/contact'}>Contact</Link></li>
         </ul>
       </footer>
-    </div>
+    </>
   );
 }
 

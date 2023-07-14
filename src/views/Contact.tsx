@@ -2,10 +2,11 @@ import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from "react-icons/a
 import { FaDev } from "react-icons/fa"
 const Contact = () => {
     return (
-        <main>
-            <h1 className="contact__title">Envie de faire un projet ensemble ?</h1>
-            <p>Vous souhaitez collaborer ou vous avez besoin d'un développeur web ? Contactez-moi à l'adresse clairedochez@gmail.com !</p>
+        <main className="contact">
+
 <section className="contact__middle">
+<h1 className="contact__title">Envie de faire un projet ensemble ?</h1>
+            <p>Vous souhaitez collaborer ou vous avez besoin d'un développeur web ? Contactez-moi à l'adresse clairedochez@gmail.com !</p>
     <h2>Vous pouvez aussi me contacter sur...</h2>
     <ul className="socials__container">
         <li>
