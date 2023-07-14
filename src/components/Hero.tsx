@@ -1,8 +1,7 @@
 import { useRef } from 'react';
 
 const Hero = () => {
-
-  const ref = useRef(null);
+  const ref = useRef<null | HTMLDivElement>(null); 
 
   const handleClick = () => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call
