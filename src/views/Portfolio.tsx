@@ -16,8 +16,10 @@ const Portfolio = () => {
           <p className="portfolio__tech">Développement Full Stack <br />
             React, Node.js, MongoDB</p>
           <div className="portfolio__button">
-            <button><a href="https://communilearn.onrender.com/">voir le site </a></button>
-            <button><a href="https://github.com/Kure-ru/CommuniLearn">voir le code</a></button>
+            <a href="https://communilearn.onrender.com/">
+              <button>voir le site</button></a>
+            <a href="https://github.com/Kure-ru/CommuniLearn">
+              <button>voir le code</button></a>
           </div>
         </div>
       </section>
@@ -30,8 +32,8 @@ const Portfolio = () => {
           <p className="portfolio__tech">Développement Full Stack <br />
             React, JavaScript, React Router</p>
           <div className="portfolio__button">
-            <button><a href="https://shopping-cart-amber-eight.vercel.app/">voir le site </a></button>
-            <button><a href="https://github.com/Kure-ru/FashionForward">voir le code</a></button>
+            <a href="https://shopping-cart-amber-eight.vercel.app/"><button>voir le site </button></a>
+            <a href="https://github.com/Kure-ru/FashionForward"><button>voir le code</button></a>
           </div>
         </div>
         <div>
@@ -49,8 +51,10 @@ const Portfolio = () => {
           <p className="portfolio__tech">
             React, Typescript</p>
           <div className="portfolio__button">
-            <button><a href="https://cv-application-ten.vercel.app//">voir le site </a></button>
-            <button><a href="https://github.com/Kure-ru/CV_Application">voir le code</a></button>
+            <a href="https://cv-application-ten.vercel.app/">
+              <button>voir le site</button></a>
+            <a href="https://github.com/Kure-ru/CV_Application">
+              <button>voir le code</button></a>
           </div>
         </div>
       </section>
@@ -63,10 +67,15 @@ const Portfolio = () => {
             Ce code implémente un jeu de mémoire basé sur l'un de mes jeux préférés, Stardew Valley. Le jeu affiche un ensemble de cartes, chacune avec le nom et la photo d'un personnage. Si le joueur clique sur une carte sur laquelle il a déjà cliqué, le jeu est terminé. Si le joueur clique sur toutes les cartes sans faire d'erreur, il remporte la partie.</p>
           <p className="portfolio__tech">
             React, Typescript</p>
+
           <div className="portfolio__button">
-            <button><a href="https://memory-card-chi.vercel.app/">voir le site </a></button>
-            <button><a href="https://github.com/Kure-ru/Memory-Card">voir le code</a></button>
+            <a href="https://memory-card-chi.vercel.app/">
+              <button>voir le site</button></a>
+            <a href="https://github.com/Kure-ru/Memory-Card">
+              <button>voir le code</button></a>
           </div>
+
+
         </div>
         <div>
           <img className="portfolio__img" src="/project4.png" alt="Stardew Valley memory game" />

@@ -28,7 +28,7 @@ const Header = () => {
 
         <header>
             <div>
-                <Link to={'/'}><img alt="logo" src="/logo.png" /></Link>
+                <Link to={'/'}><img alt="logo" src="/logo.png" id="logo" /></Link>
             </div>
             {(toggleMenu || screenWidth > 600) && (
             <ul className="list">
