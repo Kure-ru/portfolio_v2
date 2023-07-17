@@ -8,7 +8,6 @@
 
 main {
   width: 100vw;
-  padding: 3rem 0;
 }
 
 ul {
@@ -245,7 +244,7 @@ footer a:hover {
 @media (max-width: 480px) {
   /* Styles for mobile devices */
   main {
-    padding: 1rem;
+    padding: 3rem 0;
   }
 
   .about__text {
@@ -304,7 +303,7 @@ footer a:hover {
     z-index: 999;
     position: absolute;
     top: 90px;
-    right: -70px;
+    right: 0px;
   }
 
   .items:nth-child(1) {
@@ -330,7 +329,7 @@ footer a:hover {
   }
 
   main {
-    padding: 3rem 50px;
+    padding: 3rem 0;
   }
 
   .contact {
