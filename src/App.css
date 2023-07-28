@@ -150,6 +150,12 @@ footer a:hover {
 
 /* Portfolio */
 
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
 .portfolio__title {
   margin: 0;
 }
@@ -167,6 +173,8 @@ footer a:hover {
 .portfolio__container {
   display: flex;
   flex-direction: row;
+  justify-items: center;
+  align-items: center;
   padding: 4rem;
 }
 
@@ -198,6 +206,14 @@ footer a:hover {
 .portfolio__tech {
   font-weight: 700;
   color: var(--dark-gray);
+}
+
+.project--odd {
+  flex-direction: row;
+}
+
+.project--even{
+  flex-direction: row-reverse;
 }
 
 /* Contact */
@@ -285,8 +301,7 @@ footer a:hover {
     align-items: center;
   }
 
-  .project--odd,
-  .project--even {
+  .project--odd, .project--even {
     flex-direction: column;
   }
 

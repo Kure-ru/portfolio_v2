@@ -1,6 +1,6 @@
 const Portfolio = () => {
   return (
-    <main>
+    <main className="portfolio">
       <section className="portfolio__top">
         <h1 className="portfolio__title">Portfolio</h1>
         <p>Voici mes projets récents</p>
@@ -23,8 +23,34 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      {/* projet 2 */}
-      <section className="portfolio__container project--even">
+
+ {/* projet 2 */}
+ <section className="portfolio__container project--even">
+        <div>
+          <img className="portfolio__img" src="/projet5.png" alt="GreenConnect" />
+        </div>
+        <div className="container__text">
+          <h2>GreenConnect</h2>
+          <p> GreenConnect est un projet axé sur la création de groupes environnementaux en ligne, permettant aux utilisateurs de se connecter, de rejoindre des groupes et de participer à des discussions sur des sujets environnementaux. Il vise à faciliter l'engagement communautaire et à promouvoir des actions positives pour l'environnement.</p>
+          <p className="portfolio__tech">Développement Full Stack <br />
+         z   Vue, Node.js, MongoDB</p>
+          <div className="portfolio__button">
+            <a href="https://greenconnect-hitf.onrender.com/">
+              <button>voir le site</button></a>
+            <a href="https://github.com/Kure-ru/GreenConnect">
+              <button>voir le code</button></a>
+          </div>
+        </div>
+      </section>
+
+
+      {/* projet 3 */}
+      <section className="portfolio__container project--odd">
+
+      <div>
+          <img className="portfolio__img" src="/project2.gif" alt="Fashion Forward" />
+        </div>
+        
         <div className="container__text">
           <h2>Fashion Forward</h2>
           <p>
@@ -36,12 +62,10 @@ const Portfolio = () => {
             <a href="https://github.com/Kure-ru/FashionForward"><button>voir le code</button></a>
           </div>
         </div>
-        <div>
-          <img className="portfolio__img" src="/project2.gif" alt="Fashion Forward" />
-        </div>
+       
       </section>
-      {/* projet 3 */}
-      <section className="portfolio__container project--odd">
+      {/* projet 4 */}
+      <section className="portfolio__container project--even">
         <div>
           <img className="portfolio__img" src="/project3.png" alt="Mon CV facile" />
         </div>
@@ -59,8 +83,13 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* projet 4 */}
-      <section className="portfolio__container project--even">
+      {/* projet 5 */}
+      <section className="portfolio__container project--odd">
+
+      <div>
+          <img className="portfolio__img" src="/project4.png" alt="Stardew Valley memory game" />
+        </div>
+
         <div className="container__text">
           <h2>Stardew Valley Memory Game</h2>
           <p>
@@ -77,9 +106,7 @@ const Portfolio = () => {
 
 
         </div>
-        <div>
-          <img className="portfolio__img" src="/project4.png" alt="Stardew Valley memory game" />
-        </div>
+       
       </section>
     </main>
   )
